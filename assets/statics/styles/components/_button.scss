@@ -1,0 +1,39 @@
+@mixin button($color1, $color2) {
+    background: $color1;
+    background: radial-gradient(circle, $color1 0%, $color2 100%);
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.58rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    @include button(adjust-hue($c-primary, -5deg), $c-primary);
+    color: #fff; 
+}
+
+.btn-success {
+    @include button(adjust-hue($c-success, -5deg), $c-success);
+    color: #fff;
+}
+
+.btn-danger {
+    @include button(adjust-hue($c-danger, -5deg), $c-danger);
+    color: #fff;
+}

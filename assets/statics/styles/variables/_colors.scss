@@ -1,0 +1,48 @@
+/* ===============
+      Colors
+=============== */
+
+$c-primary: #1e7fac;
+$c-success: #77B162;
+$c-danger: #d12f3f;
+
+ /* Default & Light mode */
+ :root {
+    --c-primary: #1e7fac;
+    --c-secondary: #1f90c5;
+    --c-tertiary: #001F49;
+    /* Background colors */
+    --c-background: rgb(188, 201, 222);
+    /* Text colors */
+    --c-text: #272727;
+    /* Commons colors */
+    --c-danger: #d12f3f;
+}
+
+/* Dark mode */
+:root[data-theme='dark'] {
+    --c-primary: #1e7fac;
+    --c-secondary: #1f90c5;
+    --c-tertiary: #001F49;
+    /* Background colors */
+    --c-background: #111;
+    /* Text colors */
+    --c-text: #fff;
+    /* Commons colors */
+    --c-danger: #d12f3f;
+}
+
+/* System & Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root[data-theme='dark'] {
+        --c-primary: #1e7fac;
+        --c-secondary: #1f90c5;
+        --c-tertiary: #001F49;
+        /* Background colors */
+        --c-background: #111;
+        /* Text colors */
+        --c-text: #fff;
+        /* Commons colors */
+        --c-danger: #d12f3f;
+    }
+}

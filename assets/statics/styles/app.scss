@@ -1,0 +1,23 @@
+@import './reset.min.css';
+@import './variables/fonts';
+@import './variables/colors';
+@import './components/button';
+@import './components/input';
+
+body {
+    width: 100%;
+    background-color: var(--c-background);
+    font: 400 14px/1.5 'Merriweather Sans', sans-serif;
+    color: var(--c-tertiary);
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--c-text);
+    font-size: 1.6em;
+    font-weight: 500;
+}
